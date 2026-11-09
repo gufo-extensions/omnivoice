@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "name": "omnivoice",
+  "version": "0.1.0",
+  "api_version": ">= 0.2.16",
+  "depends": [],
+  "platforms": ["linux"],
+  "entry": "omnivoice_register",
+  "registration_target": "gufo_omnivoice",
+  "targets": {
+    "gufo_omnivoice": { "requires": [] },
+    "gufo_omnivoice_hip": { "requires": ["hip"] },
+    "gufo_omnivoice_tts": { "requires": ["hip"] },
+    "omnivoice_config_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_probe_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_safetensors_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_tokenizer_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_text_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_audio_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_decoding_test": { "requires": ["testing"], "role": "test" },
+    "omnivoice_generator_test": { "requires": ["hip", "testing"], "role": "test" },
+    "omnivoice_codec_test": { "requires": ["hip", "testing"], "role": "test" },
+    "omnivoice_synthesis_test": { "requires": ["hip", "testing"], "role": "test" },
+    "omnivoice_synthesize": { "requires": ["hip", "testing"], "role": "test" }
+  },
+  "providers": [
+    {
+      "id": "omnivoice",
+      "capability": "speech_synthesis",
+      "keys": ["safetensors:omnivoice"],
+      "model_ids": ["omnivoice"],
+      "target": "gufo_omnivoice_tts",
+      "entry": "omnivoice_provider_register",
+      "serving": { "voices": true }
+    }
+  ],
+  "licenses": [
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses/gufo.txt",
+    "licenses/OmniVoice.txt",
+    "licenses/transformers.txt",
+    "licenses/pydub.txt",
+    "licenses/torchaudio.txt"
+  ]
+}
