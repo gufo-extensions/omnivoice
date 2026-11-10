@@ -4,6 +4,8 @@ There is no listening study yet. This page records numerical checks against
 the reference implementation, intelligibility through an ASR model and
 Gufo's functional TTS suite. Measured November 9, 2026, with extension 0.1.0
 on Gufo `5f9612c3`, on k2-fsa/OmniVoice's Hugging Face files at `c5fdb5cc`.
+With 0.1.1 on Gufo `0e2de43e` (November 10) the 13 tests and the suite's
+`base` variant pass unchanged.
 
 ## Against the reference implementation
 

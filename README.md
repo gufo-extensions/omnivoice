@@ -121,10 +121,15 @@ with the reference model and cover synthesis end to end. Tests labeled
 
 ## Supported Gufo revisions
 
-Built and tested against Gufo `5f9612c3` (extension API 0.2.16).
+| Extension | Gufo | Extension API |
+| --- | --- | --- |
+| 0.1.1 | `0e2de43e` | 0.2.25 |
+| 0.1.0 | `5f9612c3` | 0.2.16 |
 
 ## Release history
 
+- 0.1.1 (2026-11-10): builds against Gufo `0e2de43e`; no functional
+  change.
 - 0.1.0 — first release.
 
 ## License
