@@ -1,8 +1,10 @@
 // The Higgs Audio v2 tokenizer's encoder, ported from Hugging Face
 // transformers' HiggsAudioV2TokenizerModel.encode, HuBERT and DAC encoder
-// (Apache-2.0, see licenses/transformers.txt): HuBERT features at 16 kHz
-// averaged over its hidden states, the semantic encoder, the DAC encoder, fc
-// and the residual vector quantizer.
+// (Apache-2.0, see licenses/transformers.txt; Copyright 2025 Boson AI and The
+// HuggingFace Team, Copyright 2021 The Fairseq Authors and the HuggingFace
+// Inc. team, Copyright 2024 Descript and The HuggingFace Inc. team): HuBERT
+// features at 16 kHz averaged over its hidden states, the semantic encoder,
+// the DAC encoder, fc and the residual vector quantizer.
 #include <hip/hip_runtime.h>
 #include <hipblas/hipblas.h>
 

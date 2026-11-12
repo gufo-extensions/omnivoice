@@ -1,5 +1,6 @@
 // Element-wise and layout kernels of the DAC decoder, ported from Hugging
-// Face transformers (Apache-2.0, see licenses/transformers.txt).
+// Face transformers (Apache-2.0, see licenses/transformers.txt; Copyright 2024
+// Descript and The HuggingFace Inc. team).
 #include "kernels/codec_kernels.hpp"
 
 namespace gufo::models::omnivoice::kernels {

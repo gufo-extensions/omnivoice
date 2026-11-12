@@ -1,8 +1,9 @@
 // The Higgs Audio v2 tokenizer's loading and decoder, ported from Hugging
 // Face transformers' HiggsAudioV2TokenizerModel.decode and DAC decoder
-// (Apache-2.0, see licenses/transformers.txt): RVQ decode, fc2 and the DAC
-// decoder with stride-parity output padding and without the final tanh. The
-// encoder is in codec_encoder.cpp.
+// (Apache-2.0, see licenses/transformers.txt; Copyright 2025 Boson AI and The
+// HuggingFace Team, Copyright 2024 Descript and The HuggingFace Inc. team):
+// RVQ decode, fc2 and the DAC decoder with stride-parity output padding and
+// without the final tanh. The encoder is in codec_encoder.cpp.
 #include "codec.hpp"
 
 #include <hip/hip_runtime.h>

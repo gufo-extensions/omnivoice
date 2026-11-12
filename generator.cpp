@@ -1,6 +1,7 @@
 // OmniVoice's backbone over the CFG batch; the Qwen3 layers compute what
 // Hugging Face transformers computes (Apache-2.0, see
-// licenses/transformers.txt).
+// licenses/transformers.txt; Copyright 2025 The Qwen team, Alibaba Group and
+// the HuggingFace Inc. team).
 #include "generator.hpp"
 
 #include <hip/hip_runtime.h>

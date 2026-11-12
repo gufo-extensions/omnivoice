@@ -1,5 +1,8 @@
 // Kernels of the HuBERT, semantic and DAC encoders and the RVQ, ported from
-// Hugging Face transformers (Apache-2.0, see licenses/transformers.txt).
+// Hugging Face transformers (Apache-2.0, see licenses/transformers.txt;
+// Copyright 2021 The Fairseq Authors and the HuggingFace Inc. team, Copyright
+// 2025 Boson AI and The HuggingFace Team, Copyright 2024 Descript and The
+// HuggingFace Inc. team).
 #include "kernels/encoder_kernels.hpp"
 
 #include <cfloat>

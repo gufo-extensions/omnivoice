@@ -91,6 +91,16 @@ gufo serve tts --model "$MODEL" \
 - Tested on Strix Halo (`gfx1151`) only. The server needs about 2.5 GiB of GPU
   memory.
 
+## Responsible use
+
+Voice cloning produces realistic speech in another person's voice. Clone
+only voices you are allowed to use, and don't use the extension for
+impersonation, fraud or disinformation; OmniVoice's developers prohibit
+unauthorized voice cloning and such uses of the model
+([disclaimer](https://github.com/k2-fsa/OmniVoice/blob/08be0b4ccbac3e13e374e86fbfead4b4cac343e2/README.md#disclaimer)).
+The extension adds no watermark or other marking to the audio; laws on
+synthetic media, such as labeling duties, may apply where you publish it.
+
 ## Build
 
 Compile the extension into a Gufo source build at the revision pinned in

@@ -19,6 +19,17 @@ texts are in [licenses/](licenses/) and are installed with the extension.
 | [licenses/pydub.txt](licenses/pydub.txt) | pydub |
 | [licenses/torchaudio.txt](licenses/torchaudio.txt) | torchaudio |
 
+The ported files keep their sources' copyright notices:
+
+- OmniVoice: Copyright 2026 Xiaomi Corp. (authors: Han Zhu).
+- transformers' Higgs Audio v2 tokenizer: Copyright 2025 Boson AI and The
+  HuggingFace Team.
+- transformers' DAC: Copyright 2024 Descript and The HuggingFace Inc. team.
+- transformers' HuBERT: Copyright 2021 The Fairseq Authors and the
+  HuggingFace Inc. team.
+- transformers' Qwen3: Copyright 2025 The Qwen team, Alibaba Group and the
+  HuggingFace Inc. team.
+
 The test fixtures in `tests/fixtures/` hold token IDs, logit statistics,
 codes and waveform samples that `tools/reference/` computed with OmniVoice's
 reference implementation and its released checkpoint. They contain no
