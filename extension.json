@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "name": "omnivoice",
-  "version": "0.1.1",
-  "api_version": ">= 0.2.16",
+  "version": "0.2.0",
+  "api_version": ">= 0.3.0",
   "depends": [],
   "platforms": ["linux"],
   "entry": "omnivoice_register",

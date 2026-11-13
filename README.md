@@ -4,7 +4,8 @@ A community [Gufo](https://github.com/gufo-org/gufo) extension for
 [OmniVoice](https://github.com/k2-fsa/OmniVoice), k2-fsa's massively
 multilingual zero-shot text-to-speech model, on AMD Strix Halo (`gfx1151`).
 
-> **Status:** first release, 0.1.0. Speech synthesis runs through
+> **Status:** 0.2.0 builds against Gufo 0.34.0 (extension API 0.3).
+> Speech synthesis runs through
 > `gufo serve tts` with an automatic voice, voice design and voice cloning.
 > See [quality](docs/models/omnivoice/QUALITY.md),
 > [benchmarks](docs/models/omnivoice/BENCHMARKS.md) and the known limits
@@ -103,8 +104,9 @@ synthetic media, such as labeling duties, may apply where you publish it.
 
 ## Build
 
-Compile the extension into a Gufo source build at the revision pinned in
-`flake.nix`:
+Compile the extension into a Gufo source build with extension API 0.3
+(Gufo 0.34.0 or a later 0.3 release; `flake.nix` pins the revision it was
+built and tested with):
 
 ```sh
 cmake --preset release -DGUFO_EXTENSION_DIRS=/absolute/path/to/omnivoice
@@ -133,11 +135,15 @@ with the reference model and cover synthesis end to end. Tests labeled
 
 | Extension | Gufo | Extension API |
 | --- | --- | --- |
+| 0.2.0 | `2845939b` (0.34.0) | 0.3.2 |
 | 0.1.1 | `0e2de43e` | 0.2.25 |
 | 0.1.0 | `5f9612c3` | 0.2.16 |
 
 ## Release history
 
+- 0.2.0 (2026-11-13): builds against Gufo 0.34.0 (`2845939b`) with
+  extension API 0.3; Gufo releases with API 0.2 (0.33 and earlier) no longer
+  accept it. The extension's code is unchanged.
 - 0.1.1 (2026-11-10): builds against Gufo `0e2de43e`; no functional
   change.
 - 0.1.0 — first release.
